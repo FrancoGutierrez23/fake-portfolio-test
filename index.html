@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/334b6e5847.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header -->
     <header>
         <nav>
-            <h1>Terrance Wild</h1>
+            <h1>Terrance Wild <i class="fa-solid fa-code"></i></h1>
             <ul>
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Projects</a></li>
@@ -26,7 +29,7 @@
     <!-- About Me -->
     <div class="about-me">
         <section class="text">
-            <h2>About Me</h2>
+            <h2>About Me</h2><br>
             <p>Hey there! I'm Terry, a passionate web developer with a love for crafting captivating digital experiences. With a background in HTML, CSS, and JavaScript, I thrive on bringing ideas to life through code. Whether it's creating sleek and responsive designs or diving into the intricacies of backend development, I'm always up for a challenge. I believe in the power of continuous learning and innovation, constantly honing my skills to stay at the forefront of technology. When I'm not coding, you can find me exploring new coffee shops, immersing myself in nature, or tinkering with my latest side project. Let's build something amazing together!</p>
         </section>
         <img src="https://media.themoviedb.org/t/p/w500/pxTY4SglLo5hFcMH00MxPeC5u55.jpg" alt="" srcset="">
@@ -34,17 +37,18 @@
 
     <!-- Projects -->
     <div class="projects">
-        <h2>Projects</h2>
+        <h2>Projects</h2><br>
         <ul>
-            <li>Learning C#</li>
-            <li>Building a local e-commerce</li>
-            <li>Working on databases</li>
+            <li><i class="fa-solid fa-hourglass-half larger"></i> Learning C#</li>
+            <li><i class="fa-solid fa-magnifying-glass-dollar"></i> Building a local e-commerce</li>
+            <li><i class="fa-solid fa-database"></i> Working on databases</li>
+            <li><i class="fa-brands fa-searchengin"></i> Experience on SEO</li>
         </ul>
     </div>
 
     <!-- Skills -->
     <div class="skills">
-        <h2>Skills</h2>
+        <br><h2>Skills</h2><br>
         <div class="tech-skills">
             <h3>Tech Skills</h3>
             <ul class="image-list">
@@ -90,25 +94,25 @@
         <div class="personal-skills">
             <h3>Personal Skills</h3>
             <ul id="skills-list">
-                <li id="skill1">Problem-solving <i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i>
-                  <div class="skill-description">Developers often encounter complex issues that require logical thinking and creative problem-solving skills to resolve efficiently.</div>
-                </li>
-                <li id="skill2">Attention to Detail <i class="fa-solid fa-plus"></i>
-                  <div class="skill-description">Writing clean, efficient code requires a keen eye for detail to catch bugs and ensure the codebase is maintainable.</div>
-                </li>
-                <li id="skill3">Communication <i class="fa-solid fa-plus"></i>
-                  <div class="skill-description">Effective communication skills are essential for collaborating with team members, discussing project requirements with clients, and explaining technical concepts to non-technical stakeholders.</div>
-                </li>
-                <li id="skill4">Time Management <i class="fa-solid fa-plus"></i>
-                  <div class="skill-description">Developers need to manage their time effectively to meet project deadlines, prioritize tasks, and balance multiple projects simultaneously.</div>
-                </li>
-                <li id="skill5">Adaptability <i class="fa-solid fa-plus"></i>
-                  <div class="skill-description">The tech industry is constantly evolving, so developers must be adaptable to learn new technologies, frameworks, and methodologies to stay relevant in their field.</div>
-                </li>
-                <li id="skill6">Teamwork <i class="fa-solid fa-plus"></i>
-                  <div class="skill-description">Working well in a team environment is crucial for developers, as they often collaborate with designers, project managers, and other developers to deliver successful projects.</div>
-                </li>
+                <li id="skill1" class="skill-item">Problem-solving <span class="toggle-icon">+</span></li>
+                <div class="skill-description" id="desc1">Developers often encounter complex issues that require logical thinking and creative problem-solving skills to resolve efficiently.</div>
+                
+                <li id="skill2" class="skill-item">Attention to Detail <span class="toggle-icon">+</span></li>
+                <div class="skill-description" id="desc2">Writing clean, efficient code requires a keen eye for detail to catch bugs and ensure the codebase is maintainable.</div>
+                
+                <li id="skill3" class="skill-item">Communication <span class="toggle-icon">+</span></li>
+                <div class="skill-description" id="desc3">Effective communication skills are essential for collaborating with team members, discussing project requirements with clients, and explaining technical concepts to non-technical stakeholders.</div>
+                
+                <li id="skill4" class="skill-item">Time Management <span class="toggle-icon">+</span></li>
+                <div class="skill-description" id="desc4">Developers need to manage their time effectively to meet project deadlines, prioritize tasks, and balance multiple projects simultaneously.</div>
+                
+                <li id="skill5" class="skill-item">Adaptability <span class="toggle-icon">+</span></li>
+                <div class="skill-description" id="desc5">The tech industry is constantly evolving, so developers must be adaptable to learn new technologies, frameworks, and methodologies to stay relevant in their field.</div>
+                
+                <li id="skill6" class="skill-item">Teamwork <span class="toggle-icon">+</span></li>
+                <div class="skill-description" id="desc6">Working well in a team environment is crucial for developers, as they often collaborate with designers, project managers, and other developers to deliver successful projects.</div>
               </ul>
+              
               
         </div>
     </div>

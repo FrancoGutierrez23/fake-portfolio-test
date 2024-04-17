@@ -1,26 +1,33 @@
-let count = 0;
-
 document.addEventListener("DOMContentLoaded", function() {
-    const skillsList = document.getElementById('skills-list');
-  
-    skillsList.addEventListener('click', function(event) {
-      const skill = event.target.closest('li');
-      if (!skill) return;
-      count++;
+  const skillItems = document.querySelectorAll('.skill-item');
+
+  skillItems.forEach(function(skill) {
+    skill.addEventListener('click', function() {
+      const descriptionId = this.id.replace('skill', 'desc');
+      const description = document.getElementById(descriptionId);
+
       // Hide all descriptions
-      const descriptions = document.querySelectorAll('.skill-description');
-      descriptions.forEach(function(desc) {
-        if (desc.parentNode !== skill) {
+      const allDescriptions = document.querySelectorAll('.skill-description');
+      allDescriptions.forEach(function(desc) {
+        if (desc !== description) {
           desc.classList.remove('active');
         }
       });
-      
+
       // Toggle visibility of clicked description
-      const description = skill.querySelector('.skill-description');
       description.classList.toggle('active');
+
+      // Toggle plus/minus icon
+      const toggleIcon = this.querySelector('.toggle-icon');
+      toggleIcon.textContent = toggleIcon.textContent === '+' ? '-' : '+';
+
+      // Reset the plus/minus icon of other skills
+      skillItems.forEach(function(item) {
+        if (item !== skill) {
+          const otherToggleIcon = item.querySelector('.toggle-icon');
+          otherToggleIcon.textContent = '+';
+        }
+      });
     });
   });
-  
-
-skill.onclick = document.getElementsByTagName('i').style.display = 'block';
- 
+});
